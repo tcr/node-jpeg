@@ -10,7 +10,7 @@
 #include "common.h"
 #include "jpeg_encoder.h"
 
-class DynamicJpegStack : public node::ObjectWrap {
+class DynamicJpegStack : public Nan::ObjectWrap {
     int quality;
     buffer_type buf_type;
 

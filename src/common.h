@@ -32,7 +32,7 @@ unsigned char *bgr_to_rgb(const unsigned char *rgb, int rgb_size);
 typedef enum { BUF_RGB, BUF_BGR, BUF_RGBA, BUF_BGRA } buffer_type;
 
 struct encode_request {
-    NanCallback* callback;
+    Nan::Callback* callback;
     void *jpeg_obj;
     char *jpeg;
     int jpeg_len;

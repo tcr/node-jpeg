@@ -7,7 +7,7 @@
 #include "common.h"
 #include "jpeg_encoder.h"
 
-class FixedJpegStack : public node::ObjectWrap {
+class FixedJpegStack : public Nan::ObjectWrap {
     int width, height, quality;
     buffer_type buf_type;
 

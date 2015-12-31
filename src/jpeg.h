@@ -13,7 +13,7 @@ using v8::Object;
 using v8::String;
 using v8::Value;
 
-class Jpeg : public node::ObjectWrap {
+class Jpeg : public Nan::ObjectWrap {
     JpegEncoder jpeg_encoder;
 
     static void UV_JpegEncode(uv_work_t *req);
